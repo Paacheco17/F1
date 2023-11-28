@@ -1,0 +1,78 @@
+<html>
+    <!--Emparejamos el archivo css con el html.-->
+    <!--La siguiente línea es una metaetiqueta Viewport que nos permite controlar el tamaño y la escala de la ventana gráfica.-->
+    <link rel="stylesheet" href="final.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        F1 fan
+    </title>
+    <body>
+    <head>
+        <h1>F1 fan</h1>
+        <!--Creamos un div que contenga tres accesos a tres páginas distintas, una sobre los pilotos, otras sobre la historia de la formula1 y una última sobre los circuitos.-->
+        <div id="sub">
+            
+            <div id="clasificación">
+                <ul>
+                    <a href="pilotos2.html"> <h3>PILOTOS </h3>
+                    </a>  
+                </ul>
+            </div>
+            <div id="circuitos">
+                <ul>
+                    <a href="circuitos.html"> <h3>CIRCUITOS  </h3>
+                    </a>  
+                </ul>
+            </div>
+            <div id="historia">
+                <ul>
+                    <a href="historia.html"> <h3>HISTORIA </h3>
+                    </a>  
+                </ul>
+            </div>
+
+                
+            
+        </div>
+        
+
+    </head>  
+    
+
+    <div id="before">
+        <div id="namecircuit">
+            <h2>Último Gran Premio: GP de Sao Paolo</h2>
+            <p>
+                Este último gran premio dejo un natural primer puesto de Max Verstappen, un merecido segundo lugar para el McLaren de Lando Norris y un disputadísimo y emocionante tercer puesto para el Aston Martin de Fernando Alonso.
+            </p>
+        </div>
+        <div id="plano">
+            <img src="https://media.formula1.com/image/upload/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Brazil_Circuit.png.transform/4col/image.png" >
+
+        </div>
+
+    </div>
+    <div id="after">
+        <h2>Próximo Gran Premio: GP de Las Vegas</h2>
+        <img src="https://media.formula1.com/image/upload/f_auto/q_auto/v1677249930/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Las_Vegas_Circuit.png.transform/4col/image.png">
+
+
+    </div> 
+    <!--Aqui agregaremos con js todos los mensajes que escriban los usuarios-->
+    <div id="discusion">
+        
+    </div>
+    <!--Creamos los botones y rectángulos de texto-->
+    <form id="formulario">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" rows="5" cols="50" required></textarea><br><br>
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+    <!--Con esta línea emparejamos js con html-->
+    <script src="f1.js"></script>
+   
+    </body>
+</html>
